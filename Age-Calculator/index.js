@@ -1,4 +1,4 @@
-const button = document.getElementById('btn');
+const calcBtn = document.getElementById('btn');
 const birthDay = document.getElementById('birthday');
 
 function calculateAge() {
@@ -8,7 +8,7 @@ function calculateAge() {
         alert("Please enter your birthday!!");
     } else {
         const age = getAge(birthValue);
-        console.log(age);
+        document.querySelector('#result').innerHTML = `You are ${age} years old.`;
     }
 
 }
@@ -16,13 +16,13 @@ function calculateAge() {
 function getAge(birthValue) {
     const currentDate = new Date();
     const birthDate = new Date(birthValue);
-    const age = currentDate.getFullYear() - birthDate.getFullYear();
     const month = currentDate.getMonth() - birthDate.getMonth();
+    let age = currentDate.getFullYear() - birthDate.getFullYear();
 
     if (month < 0 || (month === 0 && currentDate.getDate() < birthDate.getDate())){
-        age = age - 1
+        age --;
     }
         return age;
 }
 
-button.addEventListener('click', calculateAge());
+calcBtn.addEventListener('click', calculateAge);
