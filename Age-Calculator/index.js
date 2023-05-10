@@ -1,6 +1,5 @@
 const button = document.getElementById('btn');
 const birthDay = document.getElementById('birthday');
- 
 
 function calculateAge() {
     const birthValue = birthDay.value;
@@ -8,12 +7,11 @@ function calculateAge() {
     if (birthValue === ""){
         alert("Please enter your birthday!!");
     } else {
-        console.log(getAge(birthValue));
-
+        const age = getAge(birthValue);
+        alert(age);
     }
 
 }
-
 
 function getAge(birthValue) {
     const currentDate = new Date();
@@ -27,4 +25,4 @@ function getAge(birthValue) {
         return age;
 }
 
-button.addEventListener('click', calculateAge)
+button.addEventListener('click', calculateAge());
