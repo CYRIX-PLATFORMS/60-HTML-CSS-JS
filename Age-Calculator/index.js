@@ -8,7 +8,7 @@ function calculateAge() {
         alert("Please enter your birthday!!");
     } else {
         const age = getAge(birthValue);
-        alert(age);
+        console.log(age);
     }
 
 }
