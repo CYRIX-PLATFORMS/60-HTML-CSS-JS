@@ -60,3 +60,7 @@ button:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0,.7);
     transition: all .3s ease;
 }
+
+#result {
+    font-weight: bold;
+}
