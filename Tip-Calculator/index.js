@@ -1,19 +1,16 @@
 const button = document.getElementById('btn');
 const tip = document.getElementById('tip');
 const bill = document.getElementById('bill');
+const totalAmount = document.getElementById('result');
 
-function calculateTip() {
+function calculateAmount() {
 
-    let newBill = bill.value;
-    let newTip = tip.value;
+    const newBill = bill.value;
+    const newTip = tip.value;
     let amount = newBill * (1 + (newTip / 100));
 
-    return document.getElementById('result').innerText = `XAF ${amount}`
-    // if (newTip < 15 || newTip > 20) {
-    //     alert("Invalid range tip!!")
-    // } else {
-    //     alert("Valid range tip1");
-    // }
+    totalAmount.innerText = `XAF ${amount.toFixed(2)}`
+
 }
 
-button.addEventListener('click',calculateTip);
+button.addEventListener('click', calculateAmount);
