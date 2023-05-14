@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+img {
+    width: 100%;
+
+}
+ /* header section */
+header {
+    width: 100%;
+    background-color: #0c2461;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    position: fixed;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* working with the container */
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
