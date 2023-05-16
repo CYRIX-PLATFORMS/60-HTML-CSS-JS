@@ -1,5 +1,4 @@
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -16,7 +15,6 @@ header {
     padding: 15px;
     color: white;
     text-align: center;
-    position: fixed;
 }
 
 h1 {
@@ -29,5 +27,9 @@ h1 {
 .container {
     margin: 0 auto;
     max-width: 1200px;
+    padding: 20px;
+}
+
+.recipe-list {
     
 }
