@@ -22,7 +22,7 @@ function displayRecipe(recipes) {
 
     recipeLink = document.createElement("a");
     recipeTitle.href = recipe.sourceUrl;
-    recipeLink.innerText = "View Recipe"
+    recipeLink.innerText = "View Recipe";
 
     recipeItem.appendChild(recipeLink);
     recipeItem.appendChild(recipeTitle);
