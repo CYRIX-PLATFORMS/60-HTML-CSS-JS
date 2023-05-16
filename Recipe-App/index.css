@@ -31,5 +31,11 @@ h1 {
 }
 
 .recipe-list {
-    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.recipe-item {
+    display: flex;
 }
