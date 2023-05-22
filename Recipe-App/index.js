@@ -28,8 +28,7 @@ function displayRecipe(recipes) {
     recipeItem.appendChild(recipeImage);
     recipeItem.appendChild(recipeTitle);
     recipeItem.appendChild(recipeIngredients);
-    
-    
+
     recipeItem.appendChild(recipeLink);
   });
 }
