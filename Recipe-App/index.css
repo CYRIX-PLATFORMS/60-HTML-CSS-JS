@@ -70,6 +70,7 @@ h1 {
     text-transform: uppercase;
     font-size: 14px;
     transition: background 0.3s ease;
+    cursor: pointer;
 }
 
 .recipe-item a:hover {

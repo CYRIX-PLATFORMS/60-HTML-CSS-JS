@@ -23,12 +23,14 @@ function displayRecipe(recipes) {
     recipeLink = document.createElement("a");
     recipeTitle.href = recipe.sourceUrl;
     recipeLink.innerText = "View Recipe";
-
-    recipeItem.appendChild(recipeLink);
-    recipeItem.appendChild(recipeTitle);
-    recipeItem.appendChild(recipeImage);
-    recipeItem.appendChild(recipeIngredients);
+    recipeLink.target = "_blank";
     recipeList.appendChild(recipeItem);
+    recipeItem.appendChild(recipeImage);
+    recipeItem.appendChild(recipeTitle);
+    recipeItem.appendChild(recipeIngredients);
+    
+    
+    recipeItem.appendChild(recipeLink);
   });
 }
 
