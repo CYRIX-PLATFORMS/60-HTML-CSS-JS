@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    margin: 90px;
+    background-color: rgb(247, 246, 246);
+}
+
+#dice-sim {
+    margin: 0 auto;
+    max-width: 30rem;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+    font-family: 'Homemade Apple', sans-serif;
+}
+
+h1,
+div,
+button,
+ul {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Homemade Apple',sans-serif;
+    font-size: 2rem;
+}
+
+.dice {
+    font-size: 5.5rem;
+}
+
+button {
+    font-family: 'Homemade Apple', sans-serif;
+    font-size: 1.5rem;
+    background-color: #47a5c4;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+button:hover {
+    background-color: #2e8baf;
+}
+
+ul {
+    list-style-type: none;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+li {
+    font-size: 1.5rem;
+    padding: 2px;
+    margin: .5rem;
+    background-color: #f2f2f2;
+    border-radius: .5rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+li span {
+    font-size: 3rem;
+    padding-right: 1rem;
+}
