@@ -58,6 +58,4 @@ btn.addEventListener('click', () => {
     }, 1000) // to remove the animation after 1second i.e. 1000ms 
 
     rollDice();
-    addLi();
-
 });
