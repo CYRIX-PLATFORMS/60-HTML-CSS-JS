@@ -1,8 +1,6 @@
 const start = document.getElementById("start");
 const stop = document.getElementById("stop");
 const reset = document.getElementById("reset");
-const min = document.getElementById("min");
-const sec = document.getElementById("sec");
 const timer = document.getElementById("timer");
 
 let interval;
