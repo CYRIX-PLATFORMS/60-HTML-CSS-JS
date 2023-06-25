@@ -31,10 +31,8 @@ function startTimer() {
 }
 function stopTimer() {
     clearInterval(interval)
-    timeLeft = 1500
 }
 function resetTimer() {
-    
 }
 
 start.addEventListener("click", startTimer);
