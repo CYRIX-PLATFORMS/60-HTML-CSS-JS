@@ -3,3 +3,56 @@
 * {
     font-family: "Poppins";
 }
+
+p {
+    font-weight: 500;
+}
+
+.container {
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10rem auto;
+    border: 1px solid #a8a6a6;
+}
+
+.moves {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    /* row by default (lol)*/
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 5rem;
+    height: 5rem;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    width: 70%;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.my-score,
+.comp-score {
+    margin: 5px;
+
+}
+
+.my-score {
+    color: blue;
+}
+
+.comp-score {
+    color: red;
+}
