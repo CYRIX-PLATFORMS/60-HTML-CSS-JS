@@ -41,6 +41,19 @@ p {
     height: 30px;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#analysis {
+    width: 70%;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-style: italic;  
 }
 
 .my-score,
@@ -55,4 +68,9 @@ p {
 
 .comp-score {
     color: red;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
 }
