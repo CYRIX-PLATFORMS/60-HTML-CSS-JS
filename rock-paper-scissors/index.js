@@ -3,34 +3,76 @@ const p = document.getElementById("paper");
 const s = document.getElementById("scissors");
 const result = document.getElementById("result");
 const analysis = document.getElementById("analysis");
-const user = document.getElementById("my-score");
-const computer = document.getElementById("comp-score");
+
+var numPlays = document.getElementById("num-plays")
+var userScore = document.getElementById("my-score")
+var compScore = document.getElementById("comp-score")
 
 const options = ["rock", "paper", "scissors"];
-const compOP = options[Math.floor(Math.random() * options.length)];
-
-function conditions(userOP) {
-    if (compOP == options[0]) {
-        analysis.innerHTML = `You selected ${userOP} and the computer selected ${compOP}`;
-        result.innerHTML = "It's a tie";
-    } else if (compOP == options[1] ) {
-        analysis.innerHTML = `You selected ${userOP} and the computer selected ${compOP}`;
-        result.innerHTML = "Computer wins";
-    } else if (compOP == options[2]) {
-        analysis.innerHTML = `You selected ${userOP} and the computer selected ${compOP}`;
-        result.innerHTML = "You win";
-    }
-}
-
 r.addEventListener("click", () => {
-    conditions(compOP, "rock")
-});
-p.addEventListener("click", () => {
-    var compOP = 
-    conditions(compOP, "paper")
-});
-s.addEventListener("click", () => {
-    var compOP = options[Math.floor(Math.random() * options.length)];
+    let compOP = options[Math.floor(Math.random() * options.length)]
 
-    conditions(compOP, "scissors")
-});
+    if (compOP == options[0]) {
+        analysis.innerHTML = `You selected rock and the computer selected ${compOP}`
+        result.innerHTML = "It's a tie";
+    } else if (compOP == options[1]) {
+        analysis.innerHTML = `You selected rock and the computer selected ${compOP}`
+        result.innerHTML = "Computer wins"
+        
+        compScore.innerHTML = Number(compScore.innerHTML) + 1
+
+    } else if (compOP == options[2]) {
+        analysis.innerHTML = `You selected rock and the computer selected ${compOP}`
+        result.innerHTML = "You win"
+
+        userScore.innerHTML = Number(userScore.innerHTML) + 1
+
+    }
+
+    numPlays.innerHTML = Number(numPlays.innerHTML) + 1
+
+})
+
+p.addEventListener("click", () => {
+    let compOP = options[Math.floor(Math.random() * options.length)]
+    if (compOP == options[1]) {
+        analysis.innerHTML = `You selected paper and the computer selected ${compOP}`
+        result.innerHTML = "It's a tie";
+    } else if (compOP == options[2]) {
+        analysis.innerHTML = `You selected paper and the computer selected ${compOP}`
+        result.innerHTML = "Computer wins"
+
+        compScore.innerHTML = Number(compScore.innerHTML)  + 1;
+    } else if (compOP == options[0]) {
+        analysis.innerHTML = `You selected paper and the computer selected ${compOP}`
+        result.innerHTML = "You win"
+
+        userScore.innerHTML = Number(userScore.innerHTML) + 1
+    }
+
+    numPlays.innerHTML = Number(numPlays.innerHTML) + 1
+    
+})
+
+s.addEventListener("click", () => {
+    let compOP = options[Math.floor(Math.random() * options.length)]
+
+    if (compOP == options[2]) {
+        analysis.innerHTML = `You selected scissors and the computer selected ${compOP}`
+        result.innerHTML = "It's a tie";
+    } else if (compOP == options[0]) {
+        analysis.innerHTML = `You selected scissors and the computer selected ${compOP}`
+        result.innerHTML = "Computer wins"
+        
+        compScore.innerHTML = Number(compScore.innerHTML)  + 1;
+    } else if (compOP == options[1]) {
+        analysis.innerHTML = `You selected scissors and the computer selected ${compOP}`
+        result.innerHTML = "You win"
+
+        userScore.innerHTML = Number(userScore.innerHTML) + 1
+    }
+
+    numPlays.innerHTML = Number(numPlays.innerHTML) + 1
+
+})
+
