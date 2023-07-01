@@ -69,7 +69,7 @@ s.addEventListener("click", () => {
         analysis.innerHTML = `You selected scissors and the computer selected ${compOP}`
         result.innerHTML = "You win"
 
-        userScore.innerHTML = Number(userScore.innerHTML) + 1
+        userScore.innerHTML = Number(userScore.innerHTML) + 1.
     }
 
     numPlays.innerHTML = Number(numPlays.innerHTML) + 1
